@@ -1,0 +1,1 @@
+self.__SSG_MANIFEST=new Set(["\u002Flegal\u002F[...legal]","\u002Ftest-isr\u002F[...landingPage]"]);self.__SSG_MANIFEST_CB&&self.__SSG_MANIFEST_CB()

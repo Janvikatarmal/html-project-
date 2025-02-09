@@ -1,0 +1,443 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+   font-style: normal;
+   
+}
+.navbar{
+    background-color: rgb(26, 92, 26);
+    height: 35px;
+    width: 100%;
+    /* background-color: black; */
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    font-weight: 00;
+    font-size: 13px;
+   
+}
+.navbar a{  
+    color: white; 
+    /* text-decoration: none; */
+}
+.mainnav{
+    height: 80px;
+    width: 100%;
+    /* background-color: salmon; */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid black;
+   
+    
+}
+
+
+.mainnav a{
+    color: black;
+    padding-left: 30px;
+    font-size: 25px;
+    text-decoration: none;
+    font-weight: 800;
+    position: relative;
+    text-decoration: none;
+    bottom: 15px;
+    
+
+}
+.mainnav a:hover{
+    text-decoration: underline;
+    text-decoration-color: orange;
+    text-decoration-thickness: 6px;
+    transition: 0.3s;
+
+}
+.mainnav .first{
+    padding-left: 20px;
+
+}
+.mainnav .second a{
+   font-size: 15px;
+   position: relative;
+   top: -3px;
+   left: -14px;
+   text-decoration: none;
+
+}
+.mainnav .second i{
+    font-size: 24px;
+
+
+}
+.mainnav .second i:hover{
+    color: orange;
+}
+.mainnav .second i:last-child{
+    margin-right:30px ;
+}
+.mainpage{
+    height: 100vh;
+    width: 100%;
+    background-image: url(./Chicken-Waffle-.jpg);
+   background-repeat: no-repeat;
+   background-size: cover;
+   /* background-position: right;  */
+   background-position: center;
+}
+.mainpage{
+    padding: 70px;
+    padding-top: 120px;
+    color: white;
+}
+.mainpage h3{
+    font-size: 20px;
+    padding-top: 20px;
+
+}
+.mainpage h1{
+    font-size: 40px;
+    padding-top: 20px;
+    font-weight: 900;
+    
+}
+.mainpage p{
+    font-size: 20px;
+    font-weight: 400;
+    padding-top: 20px;
+    
+}
+.mainpage .findstore{
+
+    padding: 13px 33px 13px 33px;
+    margin-top: 20px;
+    border-radius: 40px;
+    border: none;
+    font-size: 15px;
+   
+
+}
+.mainpage .findstore:hover {
+    background-color: black; 
+    color: white; 
+    transform: scale(1.05); 
+    transition: 0.3s ease-in-out; 
+}
+.mainpage .feedback{
+    padding: 13px 33px 13px 33px;
+    border-radius: 0 0 10px 10px;
+    font-size: 18px;
+    border: none;
+    background-color: rgb(20,115, 79);
+    color: white;
+    font-weight: 500;
+   transform: rotate(90deg) translateY(-1035px);
+   position: fixed;
+   top: 300px;
+}
+/* .notice{
+    background-color: black;
+    height: 100px;
+    width: 100%;
+    position: fixed;
+    top: 630px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+
+}
+.notice a{
+    font-size: 15px;
+    color: white;
+    font-weight: 300;
+    text-decoration: none;
+
+}
+.notice .ok{
+    padding: 13px 35px 13px 35px;
+    border-radius: 40px;
+    font-size: 18px;
+    border: none;
+    background-color: white;
+    color:green;
+    font-weight: 500;
+
+} */
+.notice{
+    background-color: black;
+    height: 100px;
+    width: 100%;
+    position: fixed;
+    top: 495px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;  
+}
+
+.notice a{
+    font-size: 15px;
+    color: white;
+
+}
+
+
+
+.notice .ok{
+    background-color: white;
+    padding: 13px 35px 13px 35px;
+    border-radius: 40px;
+    font-size: 18px;
+    color: green;
+    border: none;
+    font-size: 15px;
+    font-weight: 500;
+
+}
+.iconBar{
+    height: 170px;
+    width: 100%;
+    /* background-color: aqua; */
+    display: flex;
+}
+.iconBar .child{
+    height: 150px;
+    width: 17%;
+    /* border-right: 1px solid gray; */
+  padding-top:50px;
+  padding-left: 60px;
+}
+.iconBar .child i{
+    font-size: 60px;
+    padding-left: 22px;
+    padding-bottom: 20px;
+    color: rgb(20,115, 79);
+
+}
+.iconBar .child:hover{
+    transform: scale(1.2);
+    transition: 0.2s;
+}
+.foodMenu{
+    height: 690px;
+    width: 100%;
+    /* background-color: plum; */
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: repeat(2,1fr);
+    column-gap: 20px;
+ 
+}
+.foodMenu .cards{
+    height: 330px;
+    width: 250px;
+    margin-left: 20px;
+    background-color: white;
+     /* border: 1px solid gray;   */
+    box-shadow: 2px 2px 10px  rgb(49, 48, 48);
+    border-radius: 20px;
+    margin: 20px;
+
+}
+.foodMenu .cards img{
+height: 150px;
+width: 220px;
+margin: 15px;
+border-radius: 20px;
+border: 2px solid black;
+}
+.foodMenu .cards h1{
+    margin-left: 20px;
+   
+}
+.foodMenu .cards p{
+    margin-left: 20px;
+    font-weight: 400;
+
+}
+.foodMenu .cards button{
+    margin-left: 20px;
+    margin-top: 10px;
+    padding: 3px 5px;
+    border-radius: 10px;
+    background-color: rgb(20,115, 79);
+    color: white;
+}
+.content7{
+    height: 70px;
+    width: 100%;
+    background-color: white;
+    padding-left: 50px;
+    padding-top: 100px; 
+    
+}
+.content7 h1{
+    font-size: 50px;
+}
+.inside7{
+    height: 400px;
+    width: 100%;
+    /* background-color: rgb(240, 137, 235); */
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.inside7 .first{
+    height: 300px;
+    width: 600px;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    box-shadow: 2px 2px 10px rgb(208, 207, 207);
+
+    overflow: hidden;
+    
+
+}
+.inside7 .first img{
+    position: relative;
+left: -20px;
+top: 2px;
+}
+.inside7 .first img:hover{
+    transform: scale(1.2);
+    transition: 0.1s;
+}
+.inside7 .second{
+    height: 300px;
+    width: 600px;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    box-shadow: 2px 2px 10px rgb(208, 207, 207);
+    overflow: hidden;
+}
+.inside7 .second img:hover{
+    transform: scale(1.2);
+    transition: 0.1s;
+
+}
+.inside7 .second img{
+    position: relative;
+left: -35px;
+top: 2px;
+}
+.inside7 .first i{
+    position: absolute;
+    z-index: 1;
+    font-size: 30px;
+    margin-top:60px ;
+    margin-left: -590px;
+    font-weight: 900;
+    border: 1px solid black;
+    padding: 20px;
+    border-radius: 50%;
+    background-color: black;
+    color: gainsboro;
+}
+.inside7 .second i{
+    position: absolute;
+    z-index: 1;
+    font-size: 30px;
+     margin-top:60px ;
+    margin-left: 590px;
+    font-weight: 900;
+    border: 1px solid black;
+    padding: 20px;
+    border-radius: 50%;
+    background-color: black;
+    color: gainsboro;
+
+}
+.inside7 h1,p,a{
+    padding: 10px;
+    padding-right: 20px;
+    padding-right: -20px;
+    padding-bottom: 20px;
+}
+.inside7 h1{
+    font-size: 26px;
+}
+.inside7 a:hover{
+
+font-size: 10px;
+color: green;
+}
+   .lastFooter{
+    height:330px ;
+    width: 100%;
+    background-color: black;
+    display: flex;
+    color: white;
+
+   }
+   .lastFooter .firstList,.secondList, .thirdList, .fourthList, .fiveList{
+    height: 330px;
+    width: 300px;
+    /* background-color: red; */
+    border-bottom: 1px solid white;
+    padding: 30px;
+    padding-top: 50px;
+    color: rgb(224, 220, 220);
+    
+   }
+   .lastFooter article li{
+  
+    padding-top: 20px;
+    font-weight: 400;
+
+   }
+   .lastFooter article h1:hover{
+    text-decoration: underline;
+    font-weight: 500;
+   }
+   .lastFooter .fiveList img{
+    position: relative;
+    top: 80px;
+    left: 60px;
+
+   }
+  .last{
+    height: 150px;
+    width: 100%;
+    background-color:black;
+    display: flex;
+  }
+  .last .first{
+    height: 150px;
+    width: 80%;
+    color: white;
+
+  }
+  .last .first  a{
+    padding-top: 20px;
+    font-size: 15px;
+    padding: 20px;
+    letter-spacing: -1px;
+    text-decoration: none;
+      color: white;
+  }
+
+  .last .second{
+    height: 100px;
+    width: 20%;
+    display: flex;
+
+  }
+  .last .second i{
+    height: 50px;
+    width: 50px;
+    position: relative;
+    letter-spacing: 10px;
+    font-size: 35px;
+    border: 1px solid black;
+    padding: 5px;
+    text-align: center;
+    border-radius: 50%;
+
+  }
+
